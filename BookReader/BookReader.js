@@ -3162,7 +3162,7 @@ BookReader.prototype.autoToggle = function() {
             if (self.animating) {return;}
             
             if (Math.max(self.twoPage.currentIndexL, self.twoPage.currentIndexR) >= self.lastDisplayableIndex()) {
-                self.flipBackToIndex(1); // $$$ really what we want?
+                self.flipBackToIndex(0); // $$$ really what we want?
             } else {            
                 self.flipFwdToIndex();
             }
